@@ -1,0 +1,22 @@
+{
+  "selectors": {
+    "header": ".site-header",
+    "logo": ".site-header a.brand",
+    "nav": "#site-nav",
+    "cta": ".site-header a.btn-cta",
+    "themeToggle": "[data-theme-toggle]",
+    "rtlToggle": "[data-rtl-toggle]",
+    "hero": ".hero, .page-banner",
+    "footer": ".site-footer",
+    "faq": "#faq",
+    "map": ".map-embed iframe",
+    "forms": "form[data-validate]",
+    "socialIcons": ".site-footer ul.social a",
+    "testimonials": ".card-testimonial"
+  },
+  "sitePages": {
+    "index.html": ["Hero on confidential investigative services", "Services overview", "Testimonials", "CTA to Contact"],
+    "services.html": ["Background checks section", "M&A due diligence section", "Process/engagement steps", "CTA to Contact"],
+    "contact.html": ["Confidential inquiry form with name/email/phone validation", "FAQ", "Embedded map", "Confidentiality note"]
+  }
+}

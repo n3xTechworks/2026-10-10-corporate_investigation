@@ -1,0 +1,12 @@
+{
+  "name": "calder-voss-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Calder Voss — Investigations & Due Diligence. Static HTML/CSS/vanilla-JS site.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

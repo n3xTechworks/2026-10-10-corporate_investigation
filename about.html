@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Calder Voss — Investigations &amp; Due Diligence</title>
+  <meta name="description" content="Calder Voss is an independent, partner-led investigations and due diligence firm founded in 2009. Meet the people, principles and approach behind our work.">
+  <meta name="theme-color" content="#F6F2E9">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calder Voss">
+  <meta property="og:title" content="About | Calder Voss">
+  <meta property="og:description" content="Calder Voss is an independent, partner-led investigations and due diligence firm founded in 2009. Meet the people, principles and approach behind our work.">
+
+  <!-- Favicons (exact set) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Critical font preloads (the two most-used faces). crossorigin is REQUIRED even though same-origin. -->
+  <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/hero/about-banner.webp" fetchpriority="high">
+
+  <!-- No-flash: sets theme + direction + .js BEFORE first paint (paste verbatim) -->
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('cv-theme');if(t!=='dark'&&t!=='light'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t);if(localStorage.getItem('cv-dir')==='rtl'){d.setAttribute('dir','rtl')}}catch(e){d.setAttribute('data-theme','light')}})();</script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER (identical on every page; only aria-current changes) ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" width="40" height="40" alt="">
+        <span class="brand-text">
+          <span class="brand-name">CALDER VOSS</span>
+          <span class="brand-sub">Investigations &amp; Due Diligence</span>
+        </span>
+        <span class="sr-only">— home</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <!-- On Home 1 / Home 2 add aria-current="true" to this button AND aria-current="page" to the matching dropdown link -->
+            <button class="nav-link" type="button" data-dropdown-toggle aria-expanded="false" aria-haspopup="true" aria-controls="nav-home-menu">
+              Home
+              <svg class="icon nav-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown" id="nav-home-menu">
+              <li><a class="dropdown-link" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-link" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html" aria-current="page">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-mobile">
+            <a class="btn btn-primary btn-block" href="contact.html">Request Consultation
+              <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="icon theme-icon theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M21 5h-4"/></svg>
+          <svg class="icon theme-icon theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn dir-toggle" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch to right-to-left layout">
+          <span class="dir-label dir-label-rtl" aria-hidden="true">RTL</span>
+          <span class="dir-label dir-label-ltr" aria-hidden="true">LTR</span>
+        </button>
+        <a class="btn btn-primary btn-cta" href="contact.html">Request Consultation
+          <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner" aria-labelledby="banner-title">
+      <div class="hero-media">
+        <img src="assets/img/hero/about-banner.webp" alt="" width="1920" height="720" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">About</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow"><span class="nowrap">Privileged &amp; Confidential ·</span> <span class="nowrap">Ref. 0417</span></p>
+        <h1 id="banner-title">Independent by design, discreet by <span class="redact">habit</span></h1>
+        <p class="lead">A partner-led investigations firm, built in 2009 for the questions that boards, counsel and investors would rather not get wrong.</p>
+      </div>
+    </section>
+
+    <!-- ============ 01 OUR STORY ============ -->
+    <section class="section" id="story">
+      <div class="container">
+        <div class="grid cols-2 split">
+          <div class="split-media reveal">
+            <div class="media ratio-5-4">
+              <img src="assets/img/about/story.webp" alt="A brass table lamp glowing beside a stack of old leather-bound books in a dark room" width="1000" height="800" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 01 &mdash; Our story</p>
+              <h2>Two desks, one conviction: facts first</h2>
+            </header>
+            <p class="lead">Calder Voss opened in 2009, in the uneasy months after the financial crisis, with a former regulatory enforcement lawyer, a forensic accountant and a shared view that most bad decisions begin with an unasked question.</p>
+            <p>Both had spent years on the receiving end of failed deals and missed warnings. What they saw was rarely a lack of intelligence. It was a lack of independent verification, applied early enough to change the outcome. They set out to build a firm that would supply exactly that, and nothing else: no advocacy, no stake in the transaction, and no conclusions the evidence could not carry.</p>
+            <p>The firm remains partner-owned and deliberately modest in size. We have grown by adding specialists, such as former prosecutors, compliance officers, linguists and open-source analysts, rather than by adding layers. Every engagement is still led by a named partner, and every report still says plainly what we found, how we found it and what we could not establish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 PRINCIPLES ============ -->
+    <section class="section section-alt" id="principles">
+      <div class="container">
+        <header class="section-head is-center">
+          <p class="eyebrow">&sect; 02 &mdash; Principles</p>
+          <h2>Four commitments we do not trade</h2>
+          <p class="lead">They are written into every engagement letter and tested on every file before it leaves the building.</p>
+        </header>
+        <div class="grid cols-4">
+          <article class="card reveal">
+            <div class="card-body">
+              <span class="card-index">01</span>
+              <h3 class="card-title">Independence</h3>
+              <p class="card-text">We hold no stake in the outcome. We are paid for the work, never for a conclusion, and we decline engagements where a conflict cannot be managed in the open.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-body">
+              <span class="card-index">02</span>
+              <h3 class="card-title">Discretion</h3>
+              <p class="card-text">Enquiries are structured to protect privilege and the people involved. Access to a file is limited to the team named in the engagement letter.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-body">
+              <span class="card-index">03</span>
+              <h3 class="card-title">Evidence</h3>
+              <p class="card-text">Nothing is reported without corroboration from a second, independent source. Where we cannot verify a claim, the report says so and does not guess.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-body">
+              <span class="card-index">04</span>
+              <h3 class="card-title">Proportionality</h3>
+              <p class="card-text">Scope, cost and intrusion are matched to the decision at stake. We lawfully gather what the question requires and stop there.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 HOW WE ARE STAFFED ============ -->
+    <section class="section" id="staffing">
+      <div class="container">
+        <header class="section-head is-center">
+          <p class="eyebrow">&sect; 03 &mdash; How we are staffed</p>
+          <h2>Senior people on every file</h2>
+          <p class="lead">A named partner, a lead investigator and the right specialists for the question. We do not hand your matter to a pool.</p>
+        </header>
+        <div class="grid cols-4 stats">
+          <div class="stat reveal"><p class="stat-value">24</p><p class="stat-label">Full-time investigators, analysts and accountants</p></div>
+          <div class="stat reveal"><p class="stat-value">6</p><p class="stat-label">Partners, each leading engagements personally</p></div>
+          <div class="stat reveal"><p class="stat-value">17 yrs</p><p class="stat-label">Average experience among senior staff</p></div>
+          <div class="stat reveal"><p class="stat-value">9</p><p class="stat-label">Languages spoken in-house</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 LEADERSHIP ============ -->
+    <section class="section section-alt" id="leadership">
+      <div class="container">
+        <header class="section-head is-center">
+          <p class="eyebrow">&sect; 04 &mdash; Leadership</p>
+          <h2>The people behind the work</h2>
+          <p class="lead">Four partners and directors who bring regulatory, forensic and cross-border experience to every engagement.</p>
+        </header>
+        <div class="grid cols-4">
+          <article class="card card-team reveal">
+            <div class="media card-media ratio-1-1"><img src="assets/img/people/team-1.webp" alt="Portrait of Nathaniel Voss, a bald man in dark-rimmed glasses, dark suit and tie" width="400" height="400" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <h3 class="card-title">Nathaniel Voss</h3>
+              <p class="role">Managing Partner</p>
+              <p class="card-text">Co-founder and former regulatory enforcement counsel. Leads our most sensitive board-level and cross-border matters.</p>
+            </div>
+          </article>
+          <article class="card card-team reveal">
+            <div class="media card-media ratio-1-1"><img src="assets/img/people/team-2.webp" alt="Portrait of Claire Whitfield, a woman with wavy blonde hair in a dark blazer" width="400" height="400" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <h3 class="card-title">Claire Whitfield</h3>
+              <p class="role">Head of Forensic Accounting</p>
+              <p class="card-text">Chartered accountant who reconstructs transactions and tests financial statements for expert and evidentiary use.</p>
+            </div>
+          </article>
+          <article class="card card-team reveal">
+            <div class="media card-media ratio-1-1"><img src="assets/img/people/team-3.webp" alt="Portrait of Margaret Ellison, a woman with a dark bob and black-framed glasses in a navy blazer" width="400" height="400" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <h3 class="card-title">Margaret Ellison</h3>
+              <p class="role">Director, Regulatory &amp; Compliance</p>
+              <p class="card-text">Former compliance officer and regulator. Advises on anti-bribery controls and integrity reviews.</p>
+            </div>
+          </article>
+          <article class="card card-team reveal">
+            <div class="media card-media ratio-1-1"><img src="assets/img/people/team-4.webp" alt="Portrait of Arjun Mehta, a man with swept-back grey-streaked hair in a dark suit and open white shirt" width="400" height="400" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <h3 class="card-title">Arjun Mehta</h3>
+              <p class="role">Head of Cross-Border Investigations</p>
+              <p class="card-text">Coordinates in-country research across more than 40 jurisdictions and manages our network of local specialists.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 OFFICE / APPROACH ============ -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="grid cols-2 split is-reverse">
+          <div class="split-media reveal">
+            <div class="media ratio-5-4">
+              <img src="assets/img/about/office.webp" alt="A modern meeting room with an oval wood-veneer table, leather chairs and a glass partition" width="1000" height="800" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 05 &mdash; Our office and approach</p>
+              <h2>A quiet room, a written scope</h2>
+            </header>
+            <p class="lead">Our New York office is built around private meeting rooms, secure file handling and a short, controlled list of people who ever see your matter.</p>
+            <p>Clients meet us here, or we come to them. Either way, the working method is the same: define the decision the work will inform, agree scope and privilege arrangements in writing, then investigate in stages so that findings can redirect the effort rather than just confirm it.</p>
+            <ul class="checklist">
+              <li>Engagement letters issued before any enquiry begins</li>
+              <li>Retention through counsel wherever privilege is a concern</li>
+              <li>Staged reporting, with a debrief for you and your advisers</li>
+              <li>Secure, access-logged storage for every working file</li>
+            </ul>
+            <a class="btn btn-secondary" href="services.html">Our services <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 ACCREDITATIONS ============ -->
+    <section class="section section-alt" id="accreditations">
+      <div class="container">
+        <header class="section-head is-center">
+          <p class="eyebrow">&sect; 06 &mdash; Credentials</p>
+          <h2>Professional standing, on every team</h2>
+          <p class="lead">Our people hold recognised professional qualifications and work within the standards of their disciplines.</p>
+        </header>
+        <ul class="grid cols-4 credentials" aria-label="Professional credentials and affiliations">
+          <li class="credential reveal"><span class="credential-mark">Fraud examination</span><span class="credential-name">Certified fraud examiners across investigative teams</span></li>
+          <li class="credential reveal"><span class="credential-mark">Accountancy</span><span class="credential-name">Chartered and certified public accountants in forensic practice</span></li>
+          <li class="credential reveal"><span class="credential-mark">Legal</span><span class="credential-name">Bar-admitted counsel and former prosecutors</span></li>
+          <li class="credential reveal"><span class="credential-mark">AML</span><span class="credential-name">Certified anti-money-laundering specialists</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 07 CTA ============ -->
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div class="cta-band-copy">
+          <p class="eyebrow">&sect; 07 &mdash; Next step</p>
+          <h2>Start with a confidential conversation</h2>
+          <p>Tell us the decision you are facing. A partner will tell you, honestly, whether and how we can help.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Request Consultation <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-secondary" href="services.html">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (identical on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid cols-4 footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/logo-light.svg" width="40" height="40" alt="">
+            <span class="brand-text">
+              <span class="brand-name">CALDER VOSS</span>
+              <span class="brand-sub">Investigations &amp; Due Diligence</span>
+            </span>
+            <span class="sr-only">— home</span>
+          </a>
+          <p class="footer-blurb">Independent corporate investigations and due diligence for boards, counsel and investors. Privileged &amp; Confidential.</p>
+          <ul class="social" aria-label="Social media">
+            <li><a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3zM9.75 9.75h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.06V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.69V21h-4z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.7v8z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.2" cy="6.8" r="1.1"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path class="icon-fill" d="M10 9.2v5.6l4.8-2.8z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <nav aria-labelledby="ft-links">
+          <h2 class="footer-title" id="ft-links">Quick links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="ft-services">
+          <h2 class="footer-title" id="ft-services">Services</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#background-checks">Background checks</a></li>
+            <li><a href="services.html#ma-due-diligence">M&amp;A due diligence</a></li>
+            <li><a href="services.html#forensic-accounting">Forensic accounting</a></li>
+            <li><a href="services.html#asset-tracing">Asset tracing &amp; recovery</a></li>
+            <li><a href="services.html#compliance-reviews">Compliance reviews</a></li>
+            <li><a href="services.html#litigation-support">Litigation support</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-title" id="ft-contact">Contact</h2>
+          <ul class="contact-list" aria-labelledby="ft-contact">
+            <li><span class="contact-label">Office</span><span class="contact-value">410 Marlowe Street, Suite 1200<br>New York, NY 10005</span></li>
+            <li><span class="contact-label">Telephone</span><span class="contact-value"><a href="tel:+12125550148"><bdi>+1 212 555 0148</bdi></a></span></li>
+            <li><span class="contact-label">Email</span><span class="contact-value"><a href="mailto:inquiries@caldervoss.com"><bdi>inquiries@caldervoss.com</bdi></a></span></li>
+          </ul>
+          <p class="newsletter-intro" id="nl-intro">Occasional notes on diligence and risk.</p>
+          <form class="form-inline" data-validate novalidate aria-label="Newsletter signup">
+            <div class="field">
+              <label class="sr-only" for="nl-email">Email address</label>
+              <input id="nl-email" name="email" type="email" autocomplete="email" required aria-required="true" data-rule="email" placeholder="Your email" aria-describedby="nl-intro nl-email-error">
+              <p class="field-error" id="nl-email-error" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="form-success" role="status" hidden>
+              <h3>Thank you.</h3>
+              <p>Your email address looks right. This is a demo form, so nothing has been sent yet.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Calder Voss. All rights reserved.</p>
+        <ul>
+          <li>Confidential inquiries only</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="icon-btn back-to-top" type="button" data-back-to-top aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/validation.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

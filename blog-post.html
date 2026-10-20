@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-border M&amp;A: the five questions that surface hidden liabilities | Calder Voss — Investigations &amp; Due Diligence</title>
+  <meta name="description" content="Ownership, paper history, intermediaries, cash flows and reputation: five questions that surface hidden liabilities before you close a cross-border deal.">
+  <meta name="theme-color" content="#F6F2E9">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calder Voss">
+  <meta property="og:title" content="Cross-border M&amp;A: the five questions that surface hidden liabilities | Calder Voss">
+  <meta property="og:description" content="Ownership, paper history, intermediaries, cash flows and reputation: five questions that surface hidden liabilities before you close a cross-border deal.">
+
+  <!-- Favicons (exact set) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Critical font preloads (the two most-used faces). crossorigin is REQUIRED even though same-origin. -->
+  <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/blog/article-hero.webp" fetchpriority="high">
+
+
+  <!-- No-flash: sets theme + direction + .js BEFORE first paint (paste verbatim) -->
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('cv-theme');if(t!=='dark'&&t!=='light'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t);if(localStorage.getItem('cv-dir')==='rtl'){d.setAttribute('dir','rtl')}}catch(e){d.setAttribute('data-theme','light')}})();</script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER (identical on every page; only aria-current changes) ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" width="40" height="40" alt="">
+        <span class="brand-text">
+          <span class="brand-name">CALDER VOSS</span>
+          <span class="brand-sub">Investigations &amp; Due Diligence</span>
+        </span>
+        <span class="sr-only">— home</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <!-- On Home 1 / Home 2 add aria-current="true" to this button AND aria-current="page" to the matching dropdown link -->
+            <button class="nav-link" type="button" data-dropdown-toggle aria-expanded="false" aria-haspopup="true" aria-controls="nav-home-menu">
+              Home
+              <svg class="icon nav-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown" id="nav-home-menu">
+              <li><a class="dropdown-link" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-link" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html" aria-current="page">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-mobile">
+            <a class="btn btn-primary btn-block" href="contact.html">Request Consultation
+              <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="icon theme-icon theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M21 5h-4"/></svg>
+          <svg class="icon theme-icon theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn dir-toggle" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch to right-to-left layout">
+          <span class="dir-label dir-label-rtl" aria-hidden="true">RTL</span>
+          <span class="dir-label dir-label-ltr" aria-hidden="true">LTR</span>
+        </button>
+        <a class="btn btn-primary btn-cta" href="contact.html">Request Consultation
+          <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ ARTICLE BANNER ============ -->
+    <section class="page-banner" aria-labelledby="article-title">
+      <div class="hero-media">
+        <img src="assets/img/blog/article-hero.webp" alt="" width="1600" height="800" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><span aria-current="page">Cross-border M&amp;A</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Due Diligence · Article</p>
+        <h1 id="article-title">Cross-border M&amp;A: the five questions that surface <span class="redact">hidden</span> liabilities</h1>
+        <div class="article-meta actions is-center">
+          <span class="tag">Due Diligence</span><time datetime="2026-10-02">2 October 2026</time><span>6 min read</span><span>By Daniel Reyes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARTICLE + SIDEBAR ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="grid cols-aside">
+          <article>
+            <div class="prose">
+              <p class="lead">When an acquirer buys across a border, the target's problems rarely arrive in the data room. They sit in ownership chains, in local relationships and in habits that nobody thought to write down. These five questions are where we look first.</p>
+
+              <h2>1. Who actually owns and controls the target?</h2>
+              <p>A share register shows who holds legal title. It does not always show who directs the business. In many jurisdictions a company can be owned through nominee shareholders, family trusts or holding vehicles in a third country, and the person who signs the sale agreement may not be the person who benefits from it.</p>
+              <p>Start by mapping the full ownership chain to the individuals at the top, then compare it with what the sellers have told you. Gaps are not proof of wrongdoing, but they decide where the rest of the work should concentrate. A seller who cannot or will not explain a layer of the structure has told you something useful.</p>
+              <p>Pay equal attention to control that is exercised without ownership. Side letters, voting arrangements, shareholder loans and long-term supply contracts can hand real influence to a party who appears nowhere on the register. Ask who can appoint the management, who can block a sale, and who is owed money if the business fails.</p>
+
+              <figure>
+                <div class="media ratio-12-7"><img src="assets/img/blog/article-1.webp" alt="Rows of old metal filing drawers with brass label holders" width="1200" height="700" loading="lazy" decoding="async"></div>
+                <figcaption>Corporate registries differ widely in what they hold and how current it is. Treat any single filing as a starting point.</figcaption>
+              </figure>
+
+              <h2>2. Does the paper history match the operating reality?</h2>
+              <p>Every target has a story told in filings: when it was formed, who sat on the board, which licences it holds. Every target also has an operating reality, visible in site visits, supplier relationships and the people who actually work there. Reconcile the two.</p>
+              <h3>Signals worth testing</h3>
+              <ul>
+                <li>Directors who hold dozens of appointments, or who share an address with unrelated companies.</li>
+                <li>Licences and permits that are listed in the information memorandum but cannot be found at the issuing authority.</li>
+                <li>Litigation or enforcement history that appears in local-language court records but not in English-language summaries.</li>
+                <li>Changes of name, registered office or auditor in the years before the sale process began.</li>
+              </ul>
+
+              <blockquote>The most expensive liabilities are rarely hidden. They are simply written in a language, or a registry, that the buyer's team did not search.<cite>Daniel Reyes, Senior Associate</cite></blockquote>
+
+              <h2>3. Who stands between the company and its customers?</h2>
+              <p>Agents, distributors, customs brokers and consultants are a normal part of doing business abroad. They are also the most common route by which improper payments reach public officials, and the point at which anti-bribery statutes in the buyer's home jurisdiction can attach to the acquirer after closing.</p>
+              <p>Ask for the list of third parties that interact with government on the target's behalf, together with their contracts and payment histories. Look for success fees that are large relative to the work described, payments routed through accounts in unrelated countries, and intermediaries introduced by a single senior individual. None of these is conclusive alone. Together they merit direct enquiry.</p>
+
+              <figure>
+                <div class="media ratio-12-7"><img src="assets/img/blog/article-2.webp" alt="An antique writing desk in a dim room with a typewriter and papers" width="1200" height="700" loading="lazy" decoding="async"></div>
+                <figcaption>Older records and local-language correspondence often hold the context that summaries leave out.</figcaption>
+              </figure>
+
+              <p>Finally, remember that documents can be genuine and still misleading. A properly stamped certificate proves that something was filed on a given day; it does not prove that the activity it describes took place. Where a fact is material to price, seek a second, independent source for it.</p>
+
+              <h2>4. Where does the money really move?</h2>
+              <p>Financial statements describe what a company says it earned. Bank flows, intercompany balances and related-party transactions show how the cash behaves. Revenue that is recognised promptly but collected slowly, large balances owed by affiliates, and unexplained loans to or from shareholders all call for forensic review before the price is fixed.</p>
+              <p>It is worth checking at this stage whether the target's reported margins are consistent with comparable local businesses. An outlier may reflect a genuine advantage, or it may reflect income that is not what it appears to be.</p>
+              <p>Tax positions deserve the same scrutiny. Aggressive structures, unresolved assessments and reliance on local incentives can all transfer to a buyer along with the shares. Ask for correspondence with the tax authority, not only the filed returns, and ask what the target's advisers have said about the areas of greatest uncertainty.</p>
+
+              <h2>5. What would others say if asked?</h2>
+              <p>Reputation is evidence, and it is gathered differently from documents. Former employees, competitors, suppliers and regional journalists can often describe how a business and its principals behave when nobody is watching. This work must be done discreetly and by people who understand local context, because a careless enquiry can alert a seller or damage a deal that is otherwise sound.</p>
+              <p>The aim is not a scandal hunt. Most targets, examined fairly, turn out to be exactly what they claim, and a good enquiry says so plainly. What it should do is replace assumption with evidence, so that the board approving the transaction knows what it is buying and what it is not.</p>
+
+              <h2>What to do with the answers</h2>
+              <h3>Adjust the deal, not only the decision</h3>
+              <p>Findings seldom produce a simple yes or no. More often they shape the transaction: a price adjustment, a specific indemnity, an escrow, a condition that a particular intermediary be terminated before closing, or a staged payment tied to remediation. The earlier the findings arrive, the more of these tools remain available.</p>
+              <h3>Plan for the first hundred days</h3>
+              <p>Diligence does not end at signing. Record what remained unresolved, assign an owner for each item, and carry the list into integration planning. Our <a href="services.html">M&amp;A due diligence work</a> is scoped with this hand-over in mind, so that what we learn before the deal continues to protect the buyer after it.</p>
+              <p>If you are weighing an overseas acquisition and would like to discuss scope in confidence, <a href="contact.html">contact our team</a>.</p>
+            </div>
+
+            <section class="widget mt-5" aria-labelledby="takeaways-title">
+              <h2 class="widget-title" id="takeaways-title">Key takeaways</h2>
+              <ul class="checklist">
+                <li>Map ownership to named individuals and compare it with the sellers' account.</li>
+                <li>Reconcile filings with site visits, licences and local-language records.</li>
+                <li>Scrutinise every intermediary that deals with government on the target's behalf.</li>
+                <li>Test cash flows, not only reported profit, and review related-party balances.</li>
+                <li>Gather reputation evidence early, discreetly and in the local language.</li>
+              </ul>
+            </section>
+
+            <div class="author-box mt-5">
+              <img class="avatar" src="assets/img/people/author-1.webp" alt="Portrait of Daniel Reyes" width="56" height="56" loading="lazy" decoding="async">
+              <div>
+                <h3 class="author-name">Daniel Reyes</h3>
+                <p class="role small">Senior Associate, Corporate Investigations</p>
+                <p>Daniel leads counterparty and integrity diligence for acquirers on cross-border transactions. He writes on ownership structures, intermediaries and deal risk.</p>
+              </div>
+            </div>
+
+            <div class="mt-4" role="group" aria-labelledby="share-label">
+              <p class="label" id="share-label">Share this article</p>
+              <ul class="social">
+                <li><a class="icon-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.caldervoss.com%2Fblog-post.html" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+                  <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3zM9.75 9.75h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.06V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.69V21h-4z"/></svg></a></li>
+                <li><a class="icon-btn" href="https://x.com/intent/post?text=Cross-border%20M%26A%3A%20the%20five%20questions%20that%20surface%20hidden%20liabilities&amp;url=https%3A%2F%2Fwww.caldervoss.com%2Fblog-post.html" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                  <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+                <li><a class="icon-btn" href="mailto:?subject=Cross-border%20M%26A%3A%20the%20five%20questions%20that%20surface%20hidden%20liabilities&amp;body=https%3A%2F%2Fwww.caldervoss.com%2Fblog-post.html" aria-label="Share by email">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <aside aria-label="Sidebar">
+            <div class="widget">
+              <h2 class="widget-title">Request Consultation</h2>
+              <p class="small muted">Weighing an overseas acquisition or a sensitive hire? Speak to a partner in confidence.</p>
+              <a class="btn btn-primary btn-block mt-3" href="contact.html">Request Consultation
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+            <div class="widget">
+              <h2 class="widget-title">Related reading</h2>
+              <ul class="widget-list">
+                <li><a href="blog-post.html">Beneficial-ownership disclosure is tightening<small>14 Oct 2026 · Regulation</small></a></li>
+                <li><a href="blog-post.html">When the numbers look too tidy<small>18 Sep 2026 · Fraud &amp; Risk</small></a></li>
+                <li><a href="blog-post.html">Data-room hygiene while a deal is confidential<small>6 Aug 2026 · Cyber &amp; Data</small></a></li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h2 class="widget-title">Topics</h2>
+              <div class="tag-list">
+                <a class="tag" href="blog.html#due-diligence">Due Diligence</a>
+                <a class="tag" href="blog.html#regulation">Regulation</a>
+                <a class="tag" href="blog.html#fraud-risk">Fraud &amp; Risk</a>
+                <a class="tag" href="blog.html#vetting">Vetting</a>
+                <a class="tag" href="blog.html#esg">ESG</a>
+                <a class="tag" href="blog.html#cyber-data">Cyber &amp; Data</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREV / NEXT ============ -->
+    <section class="section section-alt section-sm" aria-labelledby="more-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">§ 01 — Keep reading</p>
+          <h2 id="more-title">More from the desk</h2>
+        </header>
+        <nav aria-label="Previous and next articles">
+          <div class="grid cols-2">
+            <div class="card reveal">
+              <div class="card-body">
+                <span class="card-index">Previous article</span>
+                <h3 class="card-title"><a href="blog-post.html">Testing sustainability claims in the supply chain</a></h3>
+                <p class="card-text">20 Aug 2026 · ESG</p>
+              </div>
+            </div>
+            <div class="card reveal">
+              <div class="card-body">
+                <span class="card-index">Next article</span>
+                <h3 class="card-title"><a href="blog-post.html">Beneficial-ownership disclosure is tightening</a></h3>
+                <p class="card-text">14 Oct 2026 · Regulation</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div class="cta-band-copy">
+          <p class="eyebrow">§ 02 — Next step</p>
+          <h2>Have a transaction that needs a closer look?</h2>
+          <p>Speak to a partner. The first conversation is confidential.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Request Consultation
+            <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="blog.html">All articles</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ===================== FOOTER (identical on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid cols-4 footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/logo-light.svg" width="40" height="40" alt="">
+            <span class="brand-text">
+              <span class="brand-name">CALDER VOSS</span>
+              <span class="brand-sub">Investigations &amp; Due Diligence</span>
+            </span>
+            <span class="sr-only">— home</span>
+          </a>
+          <p class="footer-blurb">Independent corporate investigations and due diligence for boards, counsel and investors. Privileged &amp; Confidential.</p>
+          <ul class="social" aria-label="Social media">
+            <li><a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3zM9.75 9.75h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.06V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.69V21h-4z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.7v8z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.2" cy="6.8" r="1.1"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path class="icon-fill" d="M10 9.2v5.6l4.8-2.8z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <nav aria-labelledby="ft-links">
+          <h2 class="footer-title" id="ft-links">Quick links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="ft-services">
+          <h2 class="footer-title" id="ft-services">Services</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#background-checks">Background checks</a></li>
+            <li><a href="services.html#ma-due-diligence">M&amp;A due diligence</a></li>
+            <li><a href="services.html#forensic-accounting">Forensic accounting</a></li>
+            <li><a href="services.html#asset-tracing">Asset tracing &amp; recovery</a></li>
+            <li><a href="services.html#compliance-reviews">Compliance reviews</a></li>
+            <li><a href="services.html#litigation-support">Litigation support</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-title" id="ft-contact">Contact</h2>
+          <ul class="contact-list" aria-labelledby="ft-contact">
+            <li><span class="contact-label">Office</span><span class="contact-value">410 Marlowe Street, Suite 1200<br>New York, NY 10005</span></li>
+            <li><span class="contact-label">Telephone</span><span class="contact-value"><a href="tel:+12125550148"><bdi>+1 212 555 0148</bdi></a></span></li>
+            <li><span class="contact-label">Email</span><span class="contact-value"><a href="mailto:inquiries@caldervoss.com"><bdi>inquiries@caldervoss.com</bdi></a></span></li>
+          </ul>
+          <p class="newsletter-intro" id="nl-intro">Occasional notes on diligence and risk.</p>
+          <form class="form-inline" data-validate novalidate aria-label="Newsletter signup">
+            <div class="field">
+              <label class="sr-only" for="nl-email">Email address</label>
+              <input id="nl-email" name="email" type="email" autocomplete="email" required aria-required="true" data-rule="email" placeholder="Your email" aria-describedby="nl-intro nl-email-error">
+              <p class="field-error" id="nl-email-error" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="form-success" role="status" hidden>
+              <h3>Thank you.</h3>
+              <p>Your email address looks right. This is a demo form, so nothing has been sent yet.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Calder Voss. All rights reserved.</p>
+        <ul>
+          <li>Confidential inquiries only</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="icon-btn back-to-top" type="button" data-back-to-top aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/validation.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

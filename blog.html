@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Calder Voss — Investigations &amp; Due Diligence</title>
+  <meta name="description" content="Practical articles on due diligence, regulation, fraud and risk, vetting, ESG and data security from the investigators and former regulators at Calder Voss.">
+  <meta name="theme-color" content="#F6F2E9">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calder Voss">
+  <meta property="og:title" content="Blog | Calder Voss">
+  <meta property="og:description" content="Practical articles on due diligence, regulation, fraud and risk, vetting, ESG and data security from the investigators and former regulators at Calder Voss.">
+
+  <!-- Favicons (exact set) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Critical font preloads (the two most-used faces). crossorigin is REQUIRED even though same-origin. -->
+  <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/hero/blog-banner.webp" fetchpriority="high">
+
+
+  <!-- No-flash: sets theme + direction + .js BEFORE first paint (paste verbatim) -->
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('cv-theme');if(t!=='dark'&&t!=='light'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t);if(localStorage.getItem('cv-dir')==='rtl'){d.setAttribute('dir','rtl')}}catch(e){d.setAttribute('data-theme','light')}})();</script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER (identical on every page; only aria-current changes) ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" width="40" height="40" alt="">
+        <span class="brand-text">
+          <span class="brand-name">CALDER VOSS</span>
+          <span class="brand-sub">Investigations &amp; Due Diligence</span>
+        </span>
+        <span class="sr-only">— home</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <!-- On Home 1 / Home 2 add aria-current="true" to this button AND aria-current="page" to the matching dropdown link -->
+            <button class="nav-link" type="button" data-dropdown-toggle aria-expanded="false" aria-haspopup="true" aria-controls="nav-home-menu">
+              Home
+              <svg class="icon nav-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown" id="nav-home-menu">
+              <li><a class="dropdown-link" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-link" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html" aria-current="page">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-mobile">
+            <a class="btn btn-primary btn-block" href="contact.html">Request Consultation
+              <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="icon theme-icon theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M21 5h-4"/></svg>
+          <svg class="icon theme-icon theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn dir-toggle" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch to right-to-left layout">
+          <span class="dir-label dir-label-rtl" aria-hidden="true">RTL</span>
+          <span class="dir-label dir-label-ltr" aria-hidden="true">LTR</span>
+        </button>
+        <a class="btn btn-primary btn-cta" href="contact.html">Request Consultation
+          <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner" aria-labelledby="banner-title">
+      <div class="hero-media">
+        <img src="assets/img/hero/blog-banner.webp" alt="" width="1920" height="720" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Blog</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Insights &amp; Commentary</p>
+        <h1 id="banner-title">Practical thinking on due diligence and <span class="redact">risk</span></h1>
+        <p class="lead">Notes from our investigators, forensic accountants and former regulators on the questions that decide a transaction.</p>
+      </div>
+    </section>
+
+    <!-- ============ § 01 FEATURED ARTICLE ============ -->
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">§ 01 — Featured</p>
+          <h2 id="featured-title">The article to read first</h2>
+        </header>
+        <article class="grid cols-2 split reveal" id="regulation">
+          <div class="split-media">
+            <div class="media ratio-20-13">
+              <img src="assets/img/blog/post-1.webp" alt="" width="800" height="520" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body">
+            <div class="card-meta"><span class="tag">Regulation</span><time datetime="2026-10-14">14 Oct 2026</time><span>8 min read</span></div>
+            <h3><a href="blog-post.html">Beneficial-ownership disclosure is tightening. What acquirers should change now</a></h3>
+            <p class="lead">Registers are becoming more public and more detailed. That helps diligence, but only for teams that know where the gaps still sit.</p>
+            <p class="muted">By Nathaniel Voss, Managing Partner</p>
+            <a class="link-arrow" href="blog-post.html">Read article
+              <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ § 02 LATEST ARTICLES ============ -->
+    <section class="section section-alt" id="articles" aria-labelledby="latest-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">§ 02 — Latest articles</p>
+          <h2 id="latest-title">More from the desk</h2>
+          <p class="lead">Browse by subject. Each topic below jumps to its most recent article.</p>
+        </header>
+
+        <nav aria-label="Browse by category" class="mb-4">
+          <div class="tag-list">
+            <a class="tag" href="#regulation">Regulation</a>
+            <a class="tag" href="#due-diligence">Due Diligence</a>
+            <a class="tag" href="#fraud-risk">Fraud &amp; Risk</a>
+            <a class="tag" href="#vetting">Vetting</a>
+            <a class="tag" href="#esg">ESG</a>
+            <a class="tag" href="#cyber-data">Cyber &amp; Data</a>
+          </div>
+        </nav>
+
+        <div class="grid cols-3">
+          <article class="card card-blog reveal" id="due-diligence">
+            <div class="media card-media ratio-20-13"><img src="assets/img/blog/post-2.webp" alt="" width="800" height="520" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag">Due Diligence</span><time datetime="2026-10-02">2 Oct 2026</time><span>6 min read</span></div>
+              <h3 class="card-title"><a href="blog-post.html">Cross-border M&amp;A: the five questions that surface hidden liabilities</a></h3>
+              <p class="card-text">Ownership, paper history, intermediaries, cash flows and reputation: where overseas targets most often hide their problems.</p>
+              <p class="small muted">By Daniel Reyes</p>
+              <span class="card-link link-arrow" aria-hidden="true">Read article <svg class="icon icon-arrow" viewBox="0 0 24 24" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </article>
+          <article class="card card-blog reveal" id="fraud-risk">
+            <div class="media card-media ratio-20-13"><img src="assets/img/blog/post-3.webp" alt="" width="800" height="520" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag">Fraud &amp; Risk</span><time datetime="2026-09-18">18 Sep 2026</time><span>7 min read</span></div>
+              <h3 class="card-title"><a href="blog-post.html">When the numbers look too tidy: reading a target's ledgers</a></h3>
+              <p class="card-text">Round totals, late journal entries and unusual vendor patterns are the quiet signals forensic accountants test first.</p>
+              <p class="small muted">By Marcus Calder</p>
+              <span class="card-link link-arrow" aria-hidden="true">Read article <svg class="icon icon-arrow" viewBox="0 0 24 24" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </article>
+          <article class="card card-blog reveal" id="vetting">
+            <div class="media card-media ratio-20-13"><img src="assets/img/blog/post-4.webp" alt="" width="800" height="520" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag">Vetting</span><time datetime="2026-09-03">3 Sep 2026</time><span>5 min read</span></div>
+              <h3 class="card-title"><a href="blog-post.html">Executive vetting beyond the CV: what a proportionate check covers</a></h3>
+              <p class="card-text">Verifying credentials, directorships and public record is the baseline. Judgement decides how much further to go.</p>
+              <p class="small muted">By Priya Nair</p>
+              <span class="card-link link-arrow" aria-hidden="true">Read article <svg class="icon icon-arrow" viewBox="0 0 24 24" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </article>
+          <article class="card card-blog reveal" id="esg">
+            <div class="media card-media ratio-20-13"><img src="assets/img/blog/post-5.webp" alt="" width="800" height="520" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag">ESG</span><time datetime="2026-08-20">20 Aug 2026</time><span>6 min read</span></div>
+              <h3 class="card-title"><a href="blog-post.html">Testing sustainability claims in the supply chain</a></h3>
+              <p class="card-text">How to separate documented practice from marketing language when a target's ESG story drives its valuation.</p>
+              <p class="small muted">By Daniel Hart</p>
+              <span class="card-link link-arrow" aria-hidden="true">Read article <svg class="icon icon-arrow" viewBox="0 0 24 24" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </article>
+          <article class="card card-blog reveal" id="cyber-data">
+            <div class="media card-media ratio-20-13"><img src="assets/img/blog/post-6.webp" alt="" width="800" height="520" loading="lazy" decoding="async"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag">Cyber &amp; Data</span><time datetime="2026-08-06">6 Aug 2026</time><span>7 min read</span></div>
+              <h3 class="card-title"><a href="blog-post.html">Data-room hygiene: protecting a deal while it is still confidential</a></h3>
+              <p class="card-text">Access logs, watermarking and staged disclosure keep sensitive diligence material from becoming the next incident.</p>
+              <p class="small muted">By Marcus Calder</p>
+              <span class="card-link link-arrow" aria-hidden="true">Read article <svg class="icon icon-arrow" viewBox="0 0 24 24" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </article>
+        </div>
+
+        <nav class="pagination mt-5" aria-label="Pagination">
+          <ul>
+            <li><a class="page-link" href="blog.html" aria-disabled="true" tabindex="-1">
+              <svg class="icon icon-prev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <span>Previous</span></a></li>
+            <li><a class="page-link" href="blog.html" aria-current="page">1</a></li>
+            <li><a class="page-link" href="blog.html" aria-disabled="true" tabindex="-1"><span>Next</span>
+              <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ § 03 NEWSLETTER BAND ============ -->
+    <section class="cta-band" aria-labelledby="newsletter-title">
+      <div class="container container-narrow text-center" data-form-wrap>
+        <p class="eyebrow">§ 03 — Newsletter</p>
+        <h2 id="newsletter-title">One considered note a month</h2>
+        <p>New articles and the occasional briefing on diligence, regulation and risk. No marketing, and you can leave at any time.</p>
+        <form class="form-inline mt-4" data-validate novalidate aria-label="Blog newsletter signup">
+          <div class="field">
+            <label class="sr-only" for="bn-email">Email address</label>
+            <input id="bn-email" name="email" type="email" autocomplete="email" required aria-required="true" data-rule="email" placeholder="you@company.com" aria-describedby="bn-email-error">
+            <p class="field-error" id="bn-email-error" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Subscribe
+            <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <div class="form-success" role="status" hidden>
+            <h3>Thank you.</h3>
+            <p>Your email address looks right. This is a demo form, so nothing has been sent yet.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <!-- ===================== FOOTER (identical on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid cols-4 footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/logo-light.svg" width="40" height="40" alt="">
+            <span class="brand-text">
+              <span class="brand-name">CALDER VOSS</span>
+              <span class="brand-sub">Investigations &amp; Due Diligence</span>
+            </span>
+            <span class="sr-only">— home</span>
+          </a>
+          <p class="footer-blurb">Independent corporate investigations and due diligence for boards, counsel and investors. Privileged &amp; Confidential.</p>
+          <ul class="social" aria-label="Social media">
+            <li><a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3zM9.75 9.75h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.06V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.69V21h-4z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.7v8z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.2" cy="6.8" r="1.1"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path class="icon-fill" d="M10 9.2v5.6l4.8-2.8z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <nav aria-labelledby="ft-links">
+          <h2 class="footer-title" id="ft-links">Quick links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="ft-services">
+          <h2 class="footer-title" id="ft-services">Services</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#background-checks">Background checks</a></li>
+            <li><a href="services.html#ma-due-diligence">M&amp;A due diligence</a></li>
+            <li><a href="services.html#forensic-accounting">Forensic accounting</a></li>
+            <li><a href="services.html#asset-tracing">Asset tracing &amp; recovery</a></li>
+            <li><a href="services.html#compliance-reviews">Compliance reviews</a></li>
+            <li><a href="services.html#litigation-support">Litigation support</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-title" id="ft-contact">Contact</h2>
+          <ul class="contact-list" aria-labelledby="ft-contact">
+            <li><span class="contact-label">Office</span><span class="contact-value">410 Marlowe Street, Suite 1200<br>New York, NY 10005</span></li>
+            <li><span class="contact-label">Telephone</span><span class="contact-value"><a href="tel:+12125550148"><bdi>+1 212 555 0148</bdi></a></span></li>
+            <li><span class="contact-label">Email</span><span class="contact-value"><a href="mailto:inquiries@caldervoss.com"><bdi>inquiries@caldervoss.com</bdi></a></span></li>
+          </ul>
+          <p class="newsletter-intro" id="nl-intro">Occasional notes on diligence and risk.</p>
+          <form class="form-inline" data-validate novalidate aria-label="Newsletter signup">
+            <div class="field">
+              <label class="sr-only" for="nl-email">Email address</label>
+              <input id="nl-email" name="email" type="email" autocomplete="email" required aria-required="true" data-rule="email" placeholder="Your email" aria-describedby="nl-intro nl-email-error">
+              <p class="field-error" id="nl-email-error" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="form-success" role="status" hidden>
+              <h3>Thank you.</h3>
+              <p>Your email address looks right. This is a demo form, so nothing has been sent yet.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Calder Voss. All rights reserved.</p>
+        <ul>
+          <li>Confidential inquiries only</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="icon-btn back-to-top" type="button" data-back-to-top aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/validation.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

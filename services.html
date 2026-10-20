@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Calder Voss — Investigations &amp; Due Diligence</title>
+  <meta name="description" content="Background checks, M&A due diligence, forensic accounting, asset tracing, compliance reviews and litigation support from an independent, partner-led investigations firm.">
+  <meta name="theme-color" content="#F6F2E9">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calder Voss">
+  <meta property="og:title" content="Services | Calder Voss">
+  <meta property="og:description" content="Background checks, M&A due diligence, forensic accounting, asset tracing, compliance reviews and litigation support from an independent, partner-led investigations firm.">
+
+  <!-- Favicons (exact set) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+  <!-- Critical font preloads (the two most-used faces). crossorigin is REQUIRED even though same-origin. -->
+  <link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/hero/services-banner.webp" fetchpriority="high">
+
+  <!-- No-flash: sets theme + direction + .js BEFORE first paint (paste verbatim) -->
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('cv-theme');if(t!=='dark'&&t!=='light'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.setAttribute('data-theme',t);if(localStorage.getItem('cv-dir')==='rtl'){d.setAttribute('dir','rtl')}}catch(e){d.setAttribute('data-theme','light')}})();</script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER (identical on every page; only aria-current changes) ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" width="40" height="40" alt="">
+        <span class="brand-text">
+          <span class="brand-name">CALDER VOSS</span>
+          <span class="brand-sub">Investigations &amp; Due Diligence</span>
+        </span>
+        <span class="sr-only">— home</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <!-- On Home 1 / Home 2 add aria-current="true" to this button AND aria-current="page" to the matching dropdown link -->
+            <button class="nav-link" type="button" data-dropdown-toggle aria-expanded="false" aria-haspopup="true" aria-controls="nav-home-menu">
+              Home
+              <svg class="icon nav-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown" id="nav-home-menu">
+              <li><a class="dropdown-link" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-link" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" aria-current="page">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta-mobile">
+            <a class="btn btn-primary btn-block" href="contact.html">Request Consultation
+              <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <svg class="icon theme-icon theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M19 3v4"/><path d="M21 5h-4"/></svg>
+          <svg class="icon theme-icon theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn dir-toggle" type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch to right-to-left layout">
+          <span class="dir-label dir-label-rtl" aria-hidden="true">RTL</span>
+          <span class="dir-label dir-label-ltr" aria-hidden="true">LTR</span>
+        </button>
+        <a class="btn btn-primary btn-cta" href="contact.html">Request Consultation
+          <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="page-banner" aria-labelledby="banner-title">
+      <div class="hero-media">
+        <img src="assets/img/hero/services-banner.webp" alt="" width="1920" height="720" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Services</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow"><span class="nowrap">Privileged &amp; Confidential ·</span> <span class="nowrap">Ref. 0417</span></p>
+        <h1 id="banner-title">Investigations that stand up to <span class="redact">scrutiny</span></h1>
+        <p class="lead">Six disciplines, one standard: every finding traced to a source, every scope agreed in writing.</p>
+      </div>
+    </section>
+
+    <!-- ============ 01 OVERVIEW + QUICK JUMP ============ -->
+    <section class="section section-alt" id="overview">
+      <div class="container">
+        <div class="grid cols-2 gap-lg items-center">
+          <div class="stack reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 01 &mdash; Overview</p>
+              <h2>What we do, and for whom</h2>
+            </header>
+            <p class="lead">We work for boards, general counsel, investors and law firms who need independent facts before a decision, a hire or a dispute.</p>
+            <p>Most engagements begin with one of two questions: who exactly are we dealing with, and where has the money gone? Background checks and M&amp;A due diligence answer the first; forensic accounting, asset tracing and litigation support answer the second; compliance reviews test whether your own house is in order.</p>
+          </div>
+          <nav class="reveal" aria-label="Jump to a service">
+            <p class="label">Jump to a service</p>
+            <div class="tag-list mt-3">
+              <a class="tag" href="#background-checks">Background checks</a>
+              <a class="tag" href="#ma-due-diligence">M&amp;A due diligence</a>
+              <a class="tag" href="#forensic-accounting">Forensic accounting</a>
+              <a class="tag" href="#asset-tracing">Asset tracing &amp; recovery</a>
+              <a class="tag" href="#compliance-reviews">Compliance reviews</a>
+              <a class="tag" href="#litigation-support">Litigation support</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="background-checks">
+      <div class="container">
+        <div class="grid cols-2 split">
+          <div class="split-media reveal">
+            <div class="media ratio-4-3">
+              <img src="assets/img/services/svc-1.webp" alt="A woman in a grey blazer reviews a document on a clipboard across a table from a candidate" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 02 &mdash; Background checks</p>
+              <h2>Executive and pre-employment background checks</h2>
+            </header>
+            <p class="lead">Verify who you are about to appoint, promote or partner with, before the announcement rather than after it.</p>
+            <p>Credentials on a CV are the easiest part of a person to check and the part most often left unchecked. Our reviews go further: identity and right-to-work, education and employment history, directorships and beneficial interests, litigation and regulatory history, and the kind of reputation that only surfaces in informed conversation.</p>
+            <p>Every check is conducted lawfully and with the candidate&rsquo;s documented consent where local law requires it. Where we find something, we report the source, the date and our confidence, and we separate confirmed fact from allegation.</p>
+            <p class="label">Scope</p>
+            <ul class="checklist">
+              <li>Identity, education and employment verification, including direct confirmation with institutions and former employers</li>
+              <li>Corporate affiliations, directorships and conflicts of interest</li>
+              <li>Civil litigation, bankruptcy, sanctions and adverse-media screening in the relevant languages</li>
+              <li>Regulatory and professional-licence history</li>
+              <li>Discreet reference enquiries with informed contacts, for board and C-suite appointments</li>
+            </ul>
+            <ul class="contact-list">
+              <li><span class="contact-label">Typical deliverables</span><span class="contact-value">A written report with a one-page summary of findings, an evidence index and a source log. Verbal debrief for the hiring committee or counsel on request.</span></li>
+              <li><span class="contact-label">Typical turnaround</span><span class="contact-value">Pre-employment screening in 3 to 7 business days; executive and board-level reviews in 2 to 4 weeks, depending on the countries involved.</span></li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Discuss background checks <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="ma-due-diligence">
+      <div class="container">
+        <div class="grid cols-2 split is-reverse">
+          <div class="split-media reveal">
+            <div class="media ratio-4-3">
+              <img src="assets/img/services/svc-2.webp" alt="An empty boardroom with a long table and chairs facing floor-to-ceiling windows" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 03 &mdash; M&amp;A due diligence</p>
+              <h2>Integrity due diligence for mergers, acquisitions and investments</h2>
+            </header>
+            <p class="lead">Financial and legal diligence tells you what a target says it is. Ours examines who stands behind it and how they have behaved.</p>
+            <p>We act for acquirers, investors and lenders who need to understand counterparty risk before terms are fixed. The work runs alongside your legal and financial advisers and is scoped to the questions that could change price, structure or the decision to proceed.</p>
+            <p>Findings are staged. An early red-flag report can reshape the rest of the engagement, so you do not pay for depth in places where the first pass already settles the question.</p>
+            <p class="label">Scope</p>
+            <ul class="checklist">
+              <li>Ultimate beneficial ownership and control, traced through intermediate holding structures</li>
+              <li>Background and reputation of owners, directors and key managers</li>
+              <li>Related-party dealings, politically exposed persons and sanctions exposure</li>
+              <li>Litigation, regulatory and enforcement history across relevant jurisdictions</li>
+              <li>Anti-bribery and third-party intermediary review</li>
+              <li>Verification of management claims about customers, assets and track record</li>
+            </ul>
+            <ul class="contact-list">
+              <li><span class="contact-label">Typical deliverables</span><span class="contact-value">A staged red-flag report, a full integrity report with source citations, and a decision-focused briefing for the deal team and counsel.</span></li>
+              <li><span class="contact-label">Typical turnaround</span><span class="contact-value">Red-flag review in 5 to 10 business days; full integrity diligence in 3 to 6 weeks, with expedited timelines scoped to the deal calendar.</span></li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Discuss M&amp;A due diligence <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="forensic-accounting">
+      <div class="container">
+        <div class="grid cols-2 split">
+          <div class="split-media reveal">
+            <div class="media ratio-4-3">
+              <img src="assets/img/services/svc-3.webp" alt="An open, handwritten antique ledger on a wooden desk" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 04 &mdash; Forensic accounting</p>
+              <h2>Forensic accounting and financial reconstruction</h2>
+            </header>
+            <p class="lead">When the numbers do not reconcile, we rebuild them from source records and tell you why.</p>
+            <p>Our forensic accountants investigate suspected fraud, misappropriation and misstatement, and quantify loss for disputes and recovery. They work from ledgers, bank records and underlying documents rather than from summaries.</p>
+            <p class="label">Scope</p>
+            <ul class="checklist">
+              <li>Transaction tracing and ledger reconstruction</li>
+              <li>Fraud and misappropriation investigations</li>
+              <li>Quantification of loss and damages</li>
+            </ul>
+            <ul class="contact-list">
+              <li><span class="contact-label">Typical deliverables</span><span class="contact-value">A forensic findings report, supporting schedules and, where required, expert-ready working papers.</span></li>
+              <li><span class="contact-label">Typical turnaround</span><span class="contact-value">2 to 8 weeks, depending on data volume and access.</span></li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Discuss forensic accounting <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="asset-tracing">
+      <div class="container">
+        <div class="grid cols-2 split is-reverse">
+          <div class="split-media reveal">
+            <div class="media ratio-4-3">
+              <img src="assets/img/services/svc-4.webp" alt="Sailing yachts moored in still water at dawn under a soft peach-and-blue sky" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 05 &mdash; Asset tracing &amp; recovery</p>
+              <h2>Asset tracing and recovery support</h2>
+            </header>
+            <p class="lead">Funds move faster than proceedings. We help counsel locate assets and understand the structures that hold them.</p>
+            <p>We work with counsel on judgment enforcement, fraud recovery and matrimonial or commercial disputes. Our analysts combine registry data, shipping and property records and discreet in-country enquiries to map what is owned and by whom.</p>
+            <p class="label">Scope</p>
+            <ul class="checklist">
+              <li>Beneficial ownership and structure mapping</li>
+              <li>Real estate, vessel, aircraft and corporate holdings</li>
+              <li>Support for freezing and enforcement applications</li>
+            </ul>
+            <ul class="contact-list">
+              <li><span class="contact-label">Typical deliverables</span><span class="contact-value">An asset map with source documents, and a briefing note for counsel on enforcement options.</span></li>
+              <li><span class="contact-label">Typical turnaround</span><span class="contact-value">3 to 8 weeks for an initial trace; ongoing monitoring by arrangement.</span></li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Discuss asset tracing <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="compliance-reviews">
+      <div class="container">
+        <div class="grid cols-2 split">
+          <div class="split-media reveal">
+            <div class="media ratio-4-3">
+              <img src="assets/img/services/svc-5.webp" alt="Hands signing and handing over a paper form on a clipboard at a dark table" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 06 &mdash; Compliance reviews</p>
+              <h2>Anti-bribery, compliance and integrity reviews</h2>
+            </header>
+            <p class="lead">An independent look at whether your controls work in practice, not just on paper.</p>
+            <p>We assess anti-bribery and integrity programmes, third-party and intermediary risk, and the handling of internal concerns. Reviews suit boards preparing for regulatory scrutiny, acquirers integrating a new business, or companies responding to an internal allegation.</p>
+            <p class="label">Scope</p>
+            <ul class="checklist">
+              <li>Third-party and intermediary risk assessment</li>
+              <li>Policy, controls and testing review</li>
+              <li>Independent internal investigations</li>
+            </ul>
+            <ul class="contact-list">
+              <li><span class="contact-label">Typical deliverables</span><span class="contact-value">A risk-rated findings report with prioritised, practical recommendations.</span></li>
+              <li><span class="contact-label">Typical turnaround</span><span class="contact-value">3 to 6 weeks for a standard review.</span></li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Discuss compliance reviews <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="litigation-support">
+      <div class="container">
+        <div class="grid cols-2 split is-reverse">
+          <div class="split-media reveal">
+            <div class="media ratio-4-3">
+              <img src="assets/img/services/svc-6.webp" alt="Antique law-library shelves with a ladder and marble busts" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="split-body reveal">
+            <header class="section-head mb-0">
+              <p class="eyebrow">&sect; 07 &mdash; Litigation support</p>
+              <h2>Litigation and dispute support</h2>
+            </header>
+            <p class="lead">Evidence gathering and analysis for counsel in complex commercial disputes and arbitrations.</p>
+            <p>We are retained by counsel so that our work product can be protected by privilege. We locate and interview witnesses, assemble documentary evidence from public and private sources, and prepare analysis your legal team can rely on.</p>
+            <p class="label">Scope</p>
+            <ul class="checklist">
+              <li>Witness identification and background research</li>
+              <li>Document and open-source evidence gathering</li>
+              <li>Chronologies, link analysis and expert support</li>
+            </ul>
+            <ul class="contact-list">
+              <li><span class="contact-label">Typical deliverables</span><span class="contact-value">Evidence bundles, chronologies and written analysis in the format your counsel specifies.</span></li>
+              <li><span class="contact-label">Typical turnaround</span><span class="contact-value">Scoped to the procedural timetable.</span></li>
+            </ul>
+            <a class="btn btn-secondary" href="contact.html">Discuss litigation support <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section-head is-center">
+          <p class="eyebrow">&sect; 08 &mdash; How an engagement runs</p>
+          <h2>A clear process, in writing</h2>
+          <p class="lead">The same four steps apply whether the matter takes a week or a quarter.</p>
+        </header>
+        <ol class="grid cols-4 process">
+          <li class="step reveal"><span class="step-num">01</span><h3>Confidential scoping call</h3><p>A short conversation with a partner to define the question, the risks, the jurisdictions and the decision date. No obligation, no file opened.</p></li>
+          <li class="step reveal"><span class="step-num">02</span><h3>Engagement letter</h3><p>Scope, fees, team and privilege arrangements agreed in writing, through counsel where appropriate, before any enquiry begins.</p></li>
+          <li class="step reveal"><span class="step-num">03</span><h3>Staged investigation</h3><p>Public-record, financial and human-source work led by a named partner, with interim updates so you can redirect the effort as facts emerge.</p></li>
+          <li class="step reveal"><span class="step-num">04</span><h3>Report and debrief</h3><p>An evidenced written report with sources, followed by a debrief with you and your advisers. We say plainly what we could not establish.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 09 FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container container-narrow">
+        <header class="section-head is-center">
+          <p class="eyebrow">&sect; 09 &mdash; Questions</p>
+          <h2>Frequently asked</h2>
+        </header>
+        <div class="accordion" data-accordion-exclusive>
+          <details class="accordion-item" name="faq" open>
+            <summary>Is our first conversation confidential?</summary>
+            <div class="accordion-panel"><p>Yes. Initial calls are treated as privileged and confidential. If you prefer, we can speak with your counsel first and have them retain us, which helps protect the work product.</p></div>
+          </details>
+          <details class="accordion-item" name="faq">
+            <summary>How is the cost of an engagement determined?</summary>
+            <div class="accordion-panel"><p>Fees are based on scope, jurisdictions and seniority of the team, and are set out in the engagement letter before work starts. Staged work lets you stop or redirect after an early red-flag review.</p></div>
+          </details>
+          <details class="accordion-item" name="faq">
+            <summary>Do you work with our law firm or in-house counsel?</summary>
+            <div class="accordion-panel"><p>Frequently. We can be retained directly by counsel, and we routinely coordinate with legal and financial advisers on live transactions and disputes.</p></div>
+          </details>
+          <details class="accordion-item" name="faq">
+            <summary>Are your methods lawful in every country?</summary>
+            <div class="accordion-panel"><p>We use public records, licensed data sources and consented or informed human enquiries only. Local counsel and data-protection requirements are considered at scoping, and we decline any method that would breach local law.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 CTA ============ -->
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div class="cta-band-copy">
+          <p class="eyebrow">&sect; 10 &mdash; Next step</p>
+          <h2>Have a question that needs a quiet answer?</h2>
+          <p>Speak to a partner. The first conversation is confidential and carries no obligation.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Request Consultation <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-secondary" href="about.html">About the firm</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (identical on every page) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid cols-4 footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/logo-light.svg" width="40" height="40" alt="">
+            <span class="brand-text">
+              <span class="brand-name">CALDER VOSS</span>
+              <span class="brand-sub">Investigations &amp; Due Diligence</span>
+            </span>
+            <span class="sr-only">— home</span>
+          </a>
+          <p class="footer-blurb">Independent corporate investigations and due diligence for boards, counsel and investors. Privileged &amp; Confidential.</p>
+          <ul class="social" aria-label="Social media">
+            <li><a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3zM9.75 9.75h3.8v1.54h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.06V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.69V21h-4z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.7v8z"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.2" cy="6.8" r="1.1"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path class="icon-fill" d="M10 9.2v5.6l4.8-2.8z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <nav aria-labelledby="ft-links">
+          <h2 class="footer-title" id="ft-links">Quick links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="ft-services">
+          <h2 class="footer-title" id="ft-services">Services</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#background-checks">Background checks</a></li>
+            <li><a href="services.html#ma-due-diligence">M&amp;A due diligence</a></li>
+            <li><a href="services.html#forensic-accounting">Forensic accounting</a></li>
+            <li><a href="services.html#asset-tracing">Asset tracing &amp; recovery</a></li>
+            <li><a href="services.html#compliance-reviews">Compliance reviews</a></li>
+            <li><a href="services.html#litigation-support">Litigation support</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-title" id="ft-contact">Contact</h2>
+          <ul class="contact-list" aria-labelledby="ft-contact">
+            <li><span class="contact-label">Office</span><span class="contact-value">410 Marlowe Street, Suite 1200<br>New York, NY 10005</span></li>
+            <li><span class="contact-label">Telephone</span><span class="contact-value"><a href="tel:+12125550148"><bdi>+1 212 555 0148</bdi></a></span></li>
+            <li><span class="contact-label">Email</span><span class="contact-value"><a href="mailto:inquiries@caldervoss.com"><bdi>inquiries@caldervoss.com</bdi></a></span></li>
+          </ul>
+          <p class="newsletter-intro" id="nl-intro">Occasional notes on diligence and risk.</p>
+          <form class="form-inline" data-validate novalidate aria-label="Newsletter signup">
+            <div class="field">
+              <label class="sr-only" for="nl-email">Email address</label>
+              <input id="nl-email" name="email" type="email" autocomplete="email" required aria-required="true" data-rule="email" placeholder="Your email" aria-describedby="nl-intro nl-email-error">
+              <p class="field-error" id="nl-email-error" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="form-success" role="status" hidden>
+              <h3>Thank you.</h3>
+              <p>Your email address looks right. This is a demo form, so nothing has been sent yet.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Calder Voss. All rights reserved.</p>
+        <ul>
+          <li>Confidential inquiries only</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="icon-btn back-to-top" type="button" data-back-to-top aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/validation.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
