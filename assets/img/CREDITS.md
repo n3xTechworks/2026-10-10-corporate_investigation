@@ -42,3 +42,4 @@ People photos (`people/*`) are credited separately by the other sourcing agent.
 | `assets/img/blog/article-1.webp` | https://unsplash.com/photos/wKfAiJTgyK8 | MIKE STOLL (@bmpskier) | Unsplash License | Rows of old metal filing drawers with brass label holders. |
 | `assets/img/blog/article-2.webp` | https://unsplash.com/photos/dvtAgGQv4LA | Sofie D. (@needeeja) | Unsplash License | An antique writing desk in a dim room with a typewriter, papers and a heavy curtain. |
 | `assets/img/contact/side.webp` | https://unsplash.com/photos/8BYahZcwYgI | Dylan Calluy (@dylancalluy) | Unsplash License | A hotel-style reception desk in black marble with gold trim and warm lighting, seen past a blurred foreground. |
+| `assets/img/blog/post-7.webp` | https://www.pexels.com/photo/5370914/ | Pexels contributor | Pexels License | A magnifying glass resting on a handwritten ledger beside a map. |

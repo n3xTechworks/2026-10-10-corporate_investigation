@@ -860,3 +860,20 @@ form[data-state="success"] > :not(.form-success) { display: none; }
   .btn-primary, .btn-secondary, .icon-btn, .field input, .field select, .field textarea { border-color: ButtonText; }
   .card::before, .nav-link::after { background: Highlight; }
 }
+
+/* ---------- QA fixes (Oct 2026) ------------------------------------------ */
+/* Blog + article banners: the photo was too dark under the standard overlay, so it was invisible in both themes */
+.page-banner--blog .hero-media img, .page-banner--article .hero-media img { filter: brightness(1.45) contrast(1.05); }
+.page-banner--blog .hero-media::after, .page-banner--article .hero-media::after { background: linear-gradient(180deg, rgba(8, 19, 37, .58) 0%, rgba(8, 19, 37, .66) 55%, rgba(8, 19, 37, .78) 100%); }
+.page-banner--blog .hero-inner, .page-banner--article .hero-inner { text-shadow: 0 1px 12px rgba(8, 19, 37, .55); }
+/* Contact FAQ: heading centred above a single, centred accordion column */
+.faq-stack .section-head { margin-block-end: 40px; }
+/* Logo matches the brand name colour everywhere: dark-theme header uses the ivory mark, like the footer */
+.brand-mark--on-dark { display: none; }
+[data-theme="dark"] .site-header .brand-mark--on-light { display: none; }
+[data-theme="dark"] .site-header .brand-mark--on-dark { display: block; }
+/* Blog article authors without a portrait */
+.avatar-initials { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 600; font-size: 1.125rem; color: var(--text); }
+/* Article banner photo is a night skyline, darker than the blog one: lift it further so the city is visible */
+.page-banner--article .hero-media img { filter: brightness(1.9) contrast(1.08) saturate(1.1); }
+.page-banner--article .hero-media::after { background: linear-gradient(180deg, rgba(8, 19, 37, .42) 0%, rgba(8, 19, 37, .52) 55%, rgba(8, 19, 37, .68) 100%); }

@@ -170,7 +170,7 @@ function assert(cond, msg) { if (!cond) throw new Error(msg); }
         const hrefs = await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')));
         for (const h of hrefs) {
           if (/^(https?:|mailto:|tel:|#)/.test(h)) continue;
-          assert(fs.existsSync(path.join(ROOT, h.split('#')[0])), `${p}: broken link ${h}`);
+          assert(fs.existsSync(path.join(ROOT, h.split('#')[0].split('?')[0])), `${p}: broken link ${h}`);
         }
         const logo = await page.evaluate(() => { const a = document.querySelector('.site-header a.brand'); const r = a.querySelector('img').getBoundingClientRect(); return `${a.getAttribute('href')}:${r.width}x${r.height}`; });
         ref ??= logo;
